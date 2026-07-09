@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 3-Minute Edge: How I Narrow the Field to 4 Horses and Cash More Tickets · TrackSmart AI</title>
+<meta name="description" content="After 50 years of handicapping, I built TrackSmart AI to do in 3 minutes what used to take an hour — then I put my own eye on the Top 4. Here's the exact workflow.">
+<link rel="canonical" href="https://start.tracksmartracing.com/the-3-minute-edge.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TrackSmart AI">
+<meta property="og:url" content="https://start.tracksmartracing.com/the-3-minute-edge.html">
+<meta property="og:title" content="The 3-Minute Edge: How I Narrow the Field to 4 Horses and Cash More Tickets">
+<meta property="og:description" content="After 50 years of handicapping, I built TrackSmart AI to do in 3 minutes what used to take an hour — then I put my own eye on the Top 4. Here's the exact workflow.">
+<meta property="og:image" content="https://start.tracksmartracing.com/og-3-minute-edge.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The 3-Minute Edge: How I Narrow the Field to 4 Horses and Cash More Tickets">
+<meta name="twitter:description" content="After 50 years of handicapping, I built TrackSmart AI to do in 3 minutes what used to take an hour — then I put my own eye on the Top 4.">
+
+<!--
+  NOTE FOR DAVID:
+  Fonts load from Google Fonts CDN (Sora / Hanken Grotesk / JetBrains Mono) rather
+  than the base64-embedded woff2 used on the rest of the repo, since I don't have
+  those binary font files on hand. Swap in your embedded @font-face block from any
+  other page's <style> if you want this fully self-contained/offline like the guides.
+  Same for the og-3-minute-edge.png — placeholder path, needs a real banner image.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#04101b;
+    --panel:#0a1b2a;
+    --panel-2:#0d2033;
+    --border:#1b3b54;
+    --cyan:#28d6f5;
+    --cyan-bright:#5ce8ff;
+    --cyan-2:#46c6ff;
+    --ink:#eef6fb;
+    --muted:#9fbed2;
+    --faint:#6f93aa;
+    --amber:#ffb454;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1100px 620px at 10% -10%, rgba(40,214,245,0.09), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(70,198,255,0.06), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font-family:'Hanken Grotesk','Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height:1.7;
+    font-size:18px;
+  }
+  h1,h2,h3,h4{font-family:'Sora','Poppins',sans-serif;}
+  a{color:var(--cyan-bright);}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+
+  header.top{
+    position:sticky;top:0;z-index:20;
+    padding:16px 24px;border-bottom:1px solid var(--border);
+    background:rgba(4,16,27,0.85);backdrop-filter:blur(8px);
+  }
+  header.top .inner{max-width:720px;margin:0 auto;width:100%;display:flex;justify-content:space-between;align-items:center;}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:1rem;letter-spacing:0.2px;text-decoration:none;color:var(--ink);}
+  .logo .mark{
+    width:30px;height:30px;border-radius:8px;
+    background:linear-gradient(160deg,var(--panel-2),var(--panel));
+    border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .logo .mark svg{width:18px;height:18px;}
+  .logo .ai{color:var(--cyan);}
+  header.top nav a.back{font-size:0.85rem;color:var(--muted);text-decoration:none;}
+  header.top nav a.back:hover{color:var(--cyan-bright);}
+
+  .hero{padding:60px 24px 20px;text-align:center;}
+  .hero .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:0.72rem;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--cyan-bright);background:rgba(40,214,245,0.08);
+    border:1px solid rgba(40,214,245,0.35);border-radius:999px;
+    padding:6px 14px;margin-bottom:24px;font-family:'Sora',sans-serif;font-weight:600;
+  }
+  .hero h1{
+    font-size:2.5rem;line-height:1.18;margin:0 0 20px;font-weight:800;
+    background:linear-gradient(90deg,#fff,#cfe6f2 55%,var(--cyan-bright));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    letter-spacing:-0.01em;
+  }
+  .hero .dek{
+    font-size:1.15rem;color:var(--muted);max-width:600px;margin:0 auto 28px;
+    font-style:italic;line-height:1.6;
+  }
+  .byline{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    font-size:0.85rem;color:var(--faint);margin-bottom:8px;
+  }
+  .byline .avatar{
+    width:36px;height:36px;border-radius:50%;
+    background:linear-gradient(160deg,var(--cyan),var(--cyan-2));
+    display:flex;align-items:center;justify-content:center;
+    color:#04101b;font-family:'Sora',sans-serif;font-weight:800;font-size:0.95rem;
+  }
+  .byline .who strong{color:var(--ink);display:block;font-size:0.9rem;}
+  .byline .dot{color:var(--border);}
+
+  .divider{border:none;border-top:1px solid var(--border);margin:44px 0;}
+
+  article{padding:8px 24px 20px;}
+  article p{color:#dbe9f1;margin:0 0 24px;}
+  article p.lead{font-size:1.2rem;color:var(--ink);}
+  article h2{
+    font-size:1.55rem;margin:56px 0 20px;line-height:1.3;color:var(--ink);
+    padding-bottom:14px;border-bottom:1px solid var(--border);
+  }
+  article h2 .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:30px;height:30px;border-radius:8px;margin-right:12px;
+    background:rgba(40,214,245,0.1);border:1px solid rgba(40,214,245,0.4);
+    color:var(--cyan-bright);font-size:0.95rem;font-weight:700;vertical-align:middle;
+  }
+  article strong{color:var(--ink);}
+  article em{color:var(--cyan-bright);font-style:italic;}
+
+  blockquote.pull{
+    margin:36px 0;padding:4px 0 4px 22px;border-left:3px solid var(--cyan);
+    font-family:'Sora',sans-serif;font-size:1.25rem;font-weight:600;
+    color:var(--cyan-bright);line-height:1.5;font-style:normal;
+  }
+
+  .stat-row{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0;
+  }
+  @media (max-width:560px){.stat-row{grid-template-columns:1fr;}}
+  .stat-card{
+    background:var(--panel);border:1px solid var(--border);border-radius:14px;
+    padding:22px 20px;text-align:center;
+  }
+  .stat-card .num{
+    font-family:'Sora',sans-serif;font-weight:800;font-size:2.4rem;
+    background:linear-gradient(90deg,var(--cyan-bright),var(--cyan-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    line-height:1;margin-bottom:8px;
+  }
+  .stat-card .label{color:var(--muted);font-size:0.88rem;line-height:1.4;}
+  .stat-caption{
+    text-align:center;color:var(--faint);font-size:0.8rem;margin-top:-18px;margin-bottom:32px;
+    font-family:'JetBrains Mono',monospace;letter-spacing:0.3px;
+  }
+
+  .sig{
+    margin-top:8px;font-family:'Sora',sans-serif;font-style:normal;font-size:1.05rem;
+    color:var(--ink);
+  }
+  .sig .role{display:block;color:var(--faint);font-size:0.82rem;font-family:'Hanken Grotesk',sans-serif;margin-top:2px;}
+
+  .cta{
+    margin:56px 24px 0;background:linear-gradient(160deg,var(--panel-2),var(--panel));
+    border:1px solid var(--border);border-radius:18px;padding:36px 30px;text-align:center;
+  }
+  .cta h3{font-size:1.3rem;margin:0 0 10px;}
+  .cta p{color:var(--muted);max-width:480px;margin:0 auto 22px;font-size:0.98rem;}
+  .cta a.btn{
+    display:inline-block;background:linear-gradient(90deg,var(--cyan),var(--cyan-2));
+    color:#04101b;text-decoration:none;font-family:'Sora',sans-serif;font-weight:700;
+    padding:13px 28px;border-radius:9px;font-size:0.95rem;
+  }
+  .cta a.btn:hover{filter:brightness(1.08);}
+
+  footer{margin-top:56px;border-top:1px solid var(--border);padding:36px 24px 40px;text-align:center;}
+  footer .brand-foot{font-weight:700;letter-spacing:0.5px;margin-bottom:6px;font-family:'Sora',sans-serif;}
+  footer .brand-foot .ai{color:var(--cyan);}
+  footer .copyright{color:var(--faint);font-size:0.78rem;margin-top:6px;}
+  footer a{color:var(--faint);text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <a class="logo" href="https://start.tracksmartracing.com/">
+      <span class="mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="22" height="22" rx="6" stroke="#28d6f5" stroke-width="1.4"/>
+          <path d="M4 16l4.5-5 3.5 3 7-8" stroke="#5ce8ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15.5 6H19v3.5" stroke="#5ce8ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>TrackSmart <span class="ai">AI</span></span>
+    </a>
+    <nav><a class="back" href="https://start.tracksmartracing.com/">All Guides →</a></nav>
+  </div>
+</header>
+
+<div class="hero">
+  <span class="eyebrow">From the Founder</span>
+  <h1>The 3-Minute Edge</h1>
+  <p class="dek">How I narrow a full field down to 4 horses — and cash more tickets doing it.</p>
+  <div class="byline">
+    <span class="avatar">DL</span>
+    <span class="who"><strong>David Lowry</strong>Founder, TrackSmart AI <span class="dot">·</span> 7 min read</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <hr class="divider" style="margin-top:8px;">
+
+  <article>
+    <p class="lead">If you'd told me a few decades ago — back when I was armed with nothing but a highlighter, a stack of Daily Racing Forms, and a cup of black coffee — that one day I'd handicap a 12-horse field in under three minutes, I'd have told you to get your head checked.</p>
+
+    <p>I've been handicapping horse races for over fifty years. I've watched every system, every angle, and every "surefire" method come and go. But the game itself has changed underneath us. Information moves faster, the pools are sharper, and computer syndicates dictate where the late money lands. Standing still is the same as falling behind.</p>
+
+    <p>That's exactly why I founded <strong>TrackSmart AI</strong>. Over the past year I've built and rebuilt our 5th-generation handicapping models until they stopped feeling like software and started feeling like an edge. I don't say this lightly: I've used nearly every handicapping product to come out in the last half-century, and I have never cashed tickets at this rate.</p>
+
+    <p>Here's exactly how I use the speed and precision of TrackSmart AI — fed by Brisnet Ultimate PPs — to beat a tote board that's gotten a lot smarter than it used to be.</p>
+
+    <h2><span class="num">1</span>The 3-Minute Handicap: Harnessing the Live Tote</h2>
+
+    <p>In the old days, if a horse took a serious late move, there was no time to re-run the whole race in your head before the gates opened. You just had to guess whether the money was smart.</p>
+
+    <p>That's no longer true for me. Because TrackSmart AI can take a full set of Brisnet Ultimate PPs and hand back a complete race analysis in two to three minutes, I don't have to lock in my opinion an hour out anymore. I can wait. I can watch the board breathe. And when it moves, I feed the AI the <strong>live tote action</strong> — along with any late scratches or a sudden track-condition change — and let it recalculate on the spot.</p>
+
+    <p>If a 10-1 shot is getting hammered down to 3-1, TrackSmart tells me in seconds whether that money lines up with a form cycle worth respecting, or whether it's just noise. Either way, I know before I bet — not after.</p>
+
+    <h2><span class="num">2</span>I Let AI Cut the Fat, Then I Do the Surgery</h2>
+    <p style="margin-top:-12px;color:var(--faint);font-size:0.85rem;font-family:'JetBrains Mono',monospace;letter-spacing:0.3px;">THE TOP 4 RULE</p>
+
+    <p>Here's the most liberating part of how I work now: <em>I no longer look at the entire field.</em></p>
+
+    <p>Across a testing sample of more than 2,800 races, the 5th-generation TrackSmart AI models have proven just how sharp they've become. The numbers speak for themselves:</p>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="num">80%</div><div class="label">of winners land in the AI's Top&nbsp;4 selections</div></div>
+      <div class="stat-card"><div class="num">52%</div><div class="label">of winners land in the AI's Top&nbsp;2 selections</div></div>
+    </div>
+    <div class="stat-caption">Based on 2,800+ races tested</div>
+
+    <p>I let the model do the heavy lifting — speed pars, class drops, pace geometry — to cut the field down to those four contenders. Then I put my fifty-year handicapping hat back on.</p>
+
+    <p>I take those four horses straight to the form and look for reasons <em>not</em> to like them just as hard as I look for reasons they'll run well. Where does this horse sit in its form cycle — is it sitting on a peak effort third off the layoff? Did it have a trip last out that the public is ignoring, but the past performances aren't?</p>
+
+    <blockquote class="pull">The AI points me to the target. My human experience pulls the trigger.</blockquote>
+
+    <h2><span class="num">3</span>Real-Time Track Bias Injection for the Late Double</h2>
+
+    <p>Any veteran bettor knows historical track bias is useful — but <em>today's</em> bias is what actually pays the bills. Some days the rail is golden. Some days it's quicksand.</p>
+
+    <p>Official charts don't come out fast enough to help you plan a Pick 4 or Pick 5 on the fly, so I use a different move. By the time the card reaches its final races, I feed TrackSmart AI the results charts from the first six or seven races. It reads them instantly, works out exactly how the track is playing <em>today</em>, and folds that live bias straight into its calculations for the late double and the closing races on the card.</p>
+
+    <p>By the time I'm making my last bets of the day, my AI-generated numbers are already adjusted for the ground the horses are actually running on — not the ground they ran on last meet.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>I didn't build TrackSmart AI to replace the art of handicapping. I built it to clear the fog around it. It processes the thousands of data points buried in a set of past performances instantly, so I can spend my fifty years of judgment where it actually matters — instead of burning it on arithmetic.</p>
+
+    <p>The speed and accuracy of our 5th-generation models have genuinely revitalized the way I play this game. If you're still grinding through PPs for an hour only to get blown up by a pace scenario you misjudged, or a tote move you never saw coming, I'd like you to see what this can do for your ROI.</p>
+
+    <p>Combine your instincts with our precision, and I promise — you'll start seeing the board, and the winners, in a whole new light.</p>
+
+    <p class="sig">— David Lowry<span class="role">Founder, TrackSmart AI</span></p>
+  </article>
+
+  <div class="cta">
+    <h3>See TrackSmart AI in action</h3>
+    <p>5th-generation handicapping models built from 50 years at the track. Pick your engine and start cutting your field to four.</p>
+    <a class="btn" href="https://start.tracksmartracing.com/">Explore the Engines</a>
+  </div>
+
+  <footer>
+    <div class="brand-foot">TrackSmart <span class="ai">AI</span></div>
+    <div class="copyright">© 2026 TrackSmart AI · <a href="https://www.tracksmartracing.com">tracksmartracing.com</a></div>
+  </footer>
+</div>
+
+</body>
+</html>
